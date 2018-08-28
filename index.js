@@ -33,7 +33,7 @@ function viewCart() {
   output += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
   
   }
-}
+}return output;
 }
 
 function total() {
