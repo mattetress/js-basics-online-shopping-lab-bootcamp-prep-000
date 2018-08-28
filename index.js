@@ -23,7 +23,7 @@ function viewCart() {
   } 
   
   for (let i = 0; i < cart.length; i++) {
-    list = []; 
+    let list = []; 
     if (i < cart.length - 1) {
       
     list.push(`${cart[i][itemName]} at $${itemPrice}`);
