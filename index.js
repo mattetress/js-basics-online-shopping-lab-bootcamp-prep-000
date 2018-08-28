@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- Object.assign({
+ cart.Object.assign({
    itemName: item,
    itemPrice: Math.floor(Math.random() * 100 + 1)
  });
