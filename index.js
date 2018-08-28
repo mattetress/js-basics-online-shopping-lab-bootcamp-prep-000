@@ -23,10 +23,11 @@ function viewCart() {
   } 
   for (let i = 0; i < cart.length; i++) {
     list = []; 
+    if (i < cart.length - 1){
     list.push(`${cart[i][itemName]} at $${itemPrice}`);
     
-  }
-  return `In you cart, you have 
+  
+  let output = `In you cart, you have ${list.join(', ')}
   
   }
 }
