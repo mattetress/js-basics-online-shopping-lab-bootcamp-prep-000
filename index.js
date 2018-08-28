@@ -25,7 +25,7 @@ function viewCart() {
   for (let i = 0; i < cart.length; i++) {
     let list = []; 
     let output = "";
-    if (i < cart.length - 1) {
+    if (cart.length === 1) {
       
     list.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
    output += `In you cart, you have ${list.join(', ')}`
