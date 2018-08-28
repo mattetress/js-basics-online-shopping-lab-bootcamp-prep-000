@@ -32,6 +32,7 @@ function viewCart() {
       return `In your cart, you have ${list.join(', ')}, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
     }
   }
+}
 
 function total() {
   // write your code here
