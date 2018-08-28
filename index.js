@@ -27,10 +27,10 @@ function viewCart() {
     let output = "";
     if (i < cart.length - 1) {
       
-    list.push(`${cart[i][itemName]} at $${itemPrice}`);
+    list.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
    output += `In you cart, you have ${list.join(', ')}`
     } else {
-  output += `, and ${cart[i][itemName]} at $${itemPrice}.`;
+  output += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
   
   }
 }
