@@ -31,9 +31,9 @@ function viewCart() {
    output += `In you cart, you have ${list.join(', ')}`
     } else {
   output += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
-  
+  return output;
   }
-}return output;
+}
 }
 
 function total() {
