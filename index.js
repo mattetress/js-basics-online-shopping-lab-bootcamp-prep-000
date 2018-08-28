@@ -30,7 +30,7 @@ function viewCart() {
     list.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
    output += `In you cart, you have ${list.join(', ')}`
     } else {
-  output += `, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+  output = `In you cart, you have ${list.join(', ')}, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
   return output;
   }
 }
