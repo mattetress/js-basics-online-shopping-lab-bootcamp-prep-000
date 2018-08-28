@@ -19,22 +19,19 @@ function addToCart(item) {
 
 function viewCart() {
   if (cart.length === 0) {
-    return "Your shopping cart is empty."
-  } 
-  
-  for (let i = 0; i < cart.length; i++) {
-    let list = []; 
-    let output = "";
-    if (cart.length === 1) {
-      
-    list.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
-   output += `In you cart, you have ${list.join(', ')}`
-    } else {
-  output = `In you cart, you have ${list.join(', ')}, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
-  return output;
+    return "Your shopping cart is empty.";
   }
-}
-}
+  for (let i = 0; i < cart.length; i++) {
+    let list = [];
+    if (cart.lenth === 1) {
+      return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+    } else if (cart.length === 2) {
+      return `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+    } else {
+      list.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
+      return `In your cart, you have ${list.join(', ')}, and ${cart[i].itemName} at $${cart[i].itemPrice}.`;
+    }
+  }
 
 function total() {
   // write your code here
