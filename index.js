@@ -21,7 +21,11 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   } 
-  for (let i = 0, i < cart.length;)
+  for (let i = 0; i < cart.length; i++) {
+    list = []; 
+    list.push(`${cart[i][itemName]} at $${itemPrice}`);
+    
+  }
   return `In you cart, you have 
   
   }
